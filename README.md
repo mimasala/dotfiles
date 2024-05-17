@@ -5,7 +5,7 @@ i'm using gnu [stow](https://formulae.brew.sh/formula/stow) to manage my dotfile
 ```
  ~ $ git clone git@github.com:mimasala/dotfiles.git
  ~ $ cd dotfiles
- ~ $ stow .
+ ~/dotfiles $ stow .
 ```
 
 
