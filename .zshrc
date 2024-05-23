@@ -125,3 +125,4 @@ esac
 
 ### aliases
 alias clears="clear && clear"
+alias nvimconfig="nvim ~/.config/nvim"
