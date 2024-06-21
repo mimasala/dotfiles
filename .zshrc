@@ -81,3 +81,4 @@ eval "$(zoxide init --cmd cd zsh)"
 
 #### custom stuff ####
 alias nvimconfig='nvim ~/.config/nvim/'
+alias clear='clear && clear'
