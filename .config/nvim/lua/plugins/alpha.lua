@@ -42,8 +42,8 @@ return {
 			return datetime .. "  " .. greetingsTable[greetingIndex] .. ", " .. name
 		end
 
-    local all_logos = {
-[[
+		local all_logos = {
+			[[
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠋⠀⢀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠈⠉⠉⠙⠛⠛⠻⢿⣿⡿⠟⠁⠀⣀⣴⣿⣿⣿⣿⣿⠟
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠛⣉⣡⠀⣠⣴⣶⣶⣦⠄⣀⡀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⡿⢃⣾
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⣾⣤⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⣠⣾⡟⢡⣾⣿⣿⣿⡿⢋⣴⣿⡿⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⢡⣾⣿
@@ -64,7 +64,7 @@ return {
 ⠀⢸⣿⣿⣦⣈⡛⠿⠟⣋⣤⣾⣿⣿⣿⣸⣿⣿⢸⡇⢰⡆⢈⡙⠻⢿⣿⣿⣿⠀⢿⡇⢸⡇⢸⣿⢠⣿⡇⣿⡆⢈⡙⠻⠧⠀⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⠀⠀⣝⠛⢿⣿⣿⣿⣿⣿⣿⠟⣁⠀⠀⢈⠛⠿⢸⣇⢸⡇⢸⡇⣶⣦⣌⡙⠻⢄⡀⠁⠘⠇⠘⣿⢸⣿⡇⣿⡇⢸⡛⠷⣦⣄⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ]],
-[[
+			[[
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⣀⡤⠖⠛⠋⠉⠉⠀⠉⠁⠲⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⣠⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀⣀⣼⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -88,7 +88,7 @@ return {
 ⠀⠀⠀⠀⢿⣁⠀⠀⠀⠀⢀⣿⠀⠀⠀⠀⠘⣧⡀⠀⣀⣀⣠⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠉⠉⠉⠙⠛⠋⠁⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
   ]],
-  [[
+			[[
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⢿⡄⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠛⠁⠀⢷⡄⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡟⠓⠶⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠈⣷⡀⠀⠀
@@ -112,10 +112,10 @@ return {
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡃⠀⢀⣾⠉⠉⠀⠀⠀⠀⠈⠻⣆⡀⣸⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣇⣠⡞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠁⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-  ]]
-  }
-    math.randomseed(os.time())
-    local logo = all_logos[math.random(#all_logos)]
+  ]],
+		}
+		math.randomseed(os.time())
+		local logo = all_logos[math.random(#all_logos)]
 		local userName = "Lazy"
 		local greeting = getGreeting(userName)
 		local marginBottom = 0
@@ -151,7 +151,7 @@ return {
 			dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
 			dashboard.button("r", "󰄉  Recent files", ":Telescope oldfiles <CR>"),
 			dashboard.button("u", "󱐥  Update plugins", "<cmd>Lazy update<CR>"),
-			dashboard.button("c", "  Settings", ":e $HOME/.config/nvim/init.lua<CR>"),
+			dashboard.button("c", "  Settings", ":e $HOME/.config/nvim/<CR>"),
 			dashboard.button("p", "  Projects", ":e $HOME/Source/<CR>"),
 			dashboard.button("d", "󱗼  Dotfiles", ":e $HOME/dotfiles <CR>"),
 			dashboard.button("q", "󰿅  Quit", "<cmd>qa<CR>"),
