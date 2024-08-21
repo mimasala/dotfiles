@@ -6,6 +6,14 @@ return {
 		"nvim-telescope/telescope-fzf-native.nvim",
 	},
 	config = function()
+		require("telescope").setup({
+			defaults = {
+				file_ignore_patterns = {
+					"node_modules",
+					".venv",
+				},
+			},
+		})
 		pcall(require("telescope").load_extension, "fzf")
 
 		local builtin = require("telescope.builtin")
