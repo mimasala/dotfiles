@@ -10,6 +10,8 @@ return {
 			defaults = {
 				file_ignore_patterns = {
 					"node_modules",
+					"yarn.lock",
+					"poetry.lock",
 					".venv",
 				},
 			},

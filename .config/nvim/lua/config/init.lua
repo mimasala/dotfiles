@@ -29,3 +29,6 @@ vim.opt.mouse = "a"
 vim.opt.undofile = true
 vim.opt.breakindent = true
 vim.api.nvim_set_keymap("n", "<ESC>", ":set hlsearch!<CR>", { noremap = true, silent = true })
+
+vim.wo.relativenumber = true
+vim.opt.number = true
