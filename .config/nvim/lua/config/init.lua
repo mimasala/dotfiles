@@ -32,3 +32,5 @@ vim.api.nvim_set_keymap("n", "<ESC>", ":set hlsearch!<CR>", { noremap = true, si
 
 vim.wo.relativenumber = true
 vim.opt.number = true
+
+vim.api.nvim_set_keymap("n", "<Esc>", ':let @/ = ""<CR>', { noremap = true, silent = true })
