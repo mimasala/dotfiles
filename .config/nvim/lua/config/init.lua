@@ -8,6 +8,13 @@ vim.cmd("set pumheight=20")
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
+-- tabs
+vim.keymap.set("n", "<Tab>", ":bnext<CR>", { silent = true })
+vim.keymap.set("n", "<S-Tab>", ":bprev<CR>", { silent = true })
+vim.keymap.set("n", "<C-Tab>", ":bd<CR>", { silent = true })
+
+vim.api.nvim_set_keymap("n", "<Esc>", ':let @/ = ""<CR>', { noremap = true, silent = true })
+
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
@@ -28,9 +35,6 @@ vim.opt.scrolloff = 5
 vim.opt.mouse = "a"
 vim.opt.undofile = true
 vim.opt.breakindent = true
-vim.api.nvim_set_keymap("n", "<ESC>", ":set hlsearch!<CR>", { noremap = true, silent = true })
 
 vim.wo.relativenumber = true
 vim.opt.number = true
-
-vim.api.nvim_set_keymap("n", "<Esc>", ':let @/ = ""<CR>', { noremap = true, silent = true })

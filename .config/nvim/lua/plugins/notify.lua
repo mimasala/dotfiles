@@ -2,7 +2,8 @@ return {
 	"rcarriga/nvim-notify",
 	opts = {
 		max_width = function()
-			return math.floor(vim.o.lines * 0.8)
+			local screen_width = vim.opt.columns:get()
+			return math.floor(screen_width * 0.7)
 		end,
 		background_colour = "#000000", -- This will be used as the default background color
 		render = "compact",
@@ -29,5 +30,3 @@ return {
 		vim.notify = require("notify")
 	end,
 }
-
-
