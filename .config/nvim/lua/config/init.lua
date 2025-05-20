@@ -38,3 +38,8 @@ vim.opt.breakindent = true
 
 vim.wo.relativenumber = true
 vim.opt.number = true
+
+vim.api.nvim_set_keymap("n", "K", "5k", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "J", "5j", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "K", "5k", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "J", "5j", { noremap = true, silent = true })

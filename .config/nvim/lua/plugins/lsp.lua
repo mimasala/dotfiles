@@ -13,9 +13,9 @@ return {
 				local map = function(keys, func, desc)
 					vim.keymap.set("n", keys, func, { buffer = client.buf, desc = "LSP: " .. desc })
 				end
-				map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
+				-- map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
 
-				maps("n", "K", vim.lsp.buf.hover, opts_l)
+				maps("n", "I", vim.lsp.buf.hover, opts_l)
 				maps({ "n", "i" }, "<C-k>", vim.lsp.buf.signature_help, opts_l)
 				lsp_zero.default_keymaps({
 					buffer = bufnr,
